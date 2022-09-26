@@ -14,7 +14,7 @@ const createCarouselImages = (num) => {
   for (let i = 0; i < num; i++) {
     const carouselImage = document.createElement("div");
     carouselImage.classList.add("carousel-image");
-    carouselImage.style.backgroundImage = `url(./logo-${i}.png)`;
+    carouselImage.style.backgroundImage = `url(images/logo-${i}.png)`;
     if (i === 0) {
       carouselImage.x = startingX;
     } else {
