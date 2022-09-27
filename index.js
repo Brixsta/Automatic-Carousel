@@ -53,10 +53,6 @@ const expandCard = (item) => {
       cardTextTitle.classList.add("card-text-title");
       cardTextTitle.innerHTML = "lorem Ipsum";
       cardTextContainer.append(cardTextTitle);
-      const cardTextDivider = document.createElement("div");
-      cardTextDivider.classList.add("card-text-divider");
-      cardTextContainer.append(cardTextDivider);
-      createTextDividerCircles(7);
       const cardTextContent = document.createElement("p");
       cardTextContent.classList.add("card-text-content");
       cardTextContent.innerHTML =
@@ -70,23 +66,6 @@ const expandCard = (item) => {
     }
   });
 };
-
-const createTextDividerCircles = (num) => {
-  for (let i = 0; i < num; i++) {
-    const cardTextDivider = document.querySelector(".card-text-divider");
-    const circle = document.createElement("div");
-
-    if (i % 2 === 1) {
-      circle.style.height = "10px";
-      circle.style.width = "10px";
-    } else {
-      circle.style.backgroundColor = "#7f2ccb";
-    }
-    circle.classList.add("text-divider-circle");
-    cardTextDivider.append(circle);
-  }
-};
-
 restoreCarousel = () => {
   cardExpanded = false;
   carouselContainer.style.height = "300px";
