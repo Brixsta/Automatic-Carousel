@@ -71,6 +71,11 @@
   text-align: center;
   margin-top: 10px;
   font-family: "Bangers", cursive;
+  animation-name: fadeIn;
+  animation-timing-function: ease-in-out;
+  animation-delay: 500ms;
+  animation-duration: 1.5s;
+  animation-fill-mode: both;
 }
 
 .card-text-content {
@@ -78,7 +83,7 @@
   line-height: 30px;
   animation-name: fadeIn;
   animation-timing-function: ease-in-out;
-  animation-delay: 500ms;
+  animation-delay: 700ms;
   animation-duration: 1.5s;
   opacity: 0;
   animation-fill-mode: both;
